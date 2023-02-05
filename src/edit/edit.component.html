@@ -1,0 +1,45 @@
+
+<div class="body">
+    <div class="form">
+        <form [formGroup]="edit" #form="ngForm" >
+            <p class="lo">Edit Details</p>
+            <mat-form-field appearance="outline" hideRequiredMarker>
+                <mat-label>Student Name</mat-label>
+                <input type="text" matInput formControlName="studentname" [(ngModel)]="s_name">
+                <mat-error align="end" *ngIf="student && student.invalid && student.touched">
+                    This field is not valid
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" hideRequiredMarker>
+                <mat-label>Roll number</mat-label>
+                <input type="text" matInput formControlName="roll" [(ngModel)]="roll_no">
+                <mat-error align="end" *ngIf="roll && roll.invalid && roll.touched">
+                    This field is not valid
+                </mat-error>
+            </mat-form-field>
+            
+            <mat-form-field appearance="outline" hideRequiredMarker>
+                <mat-label>Department</mat-label>
+                <mat-select   formControlName="dept" [(ngModel)]="dept_n"> <!-- [formControl]="selected"  -->
+                <mat-option *ngFor="let data of department" [value]="data" >{{data}}</mat-option>
+ 
+                <!-- <mat-error *ngIf="dept.hasError('required')">You must make a selection</mat-error> -->
+            </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" hideRequiredMarker>
+                <mat-label>Competition</mat-label>
+                <mat-select formControlName="comp" [(ngModel)]="comp_n" multiple> <!-- [formControl]="selected"  -->
+                <mat-option  *ngFor="let datas of com" [value]="datas" >{{datas}}</mat-option>
+                <!-- <mat-error *ngIf="selected.hasError('required')">You must make a selection</mat-error> -->
+            </mat-select>
+            </mat-form-field>
+
+
+            <button mat-raised-button color="pick" (click)="onupdate()" [disabled]="form.invalid">Update</button>
+        </form>
+
+        
+    </div>
+    </div>

@@ -1,0 +1,38 @@
+<div class="body">
+    <div class="form">
+        <form [formGroup]="login" #form="ngForm">
+            <p class="display-6 lo">Login Form</p>
+           
+
+            <mat-form-field appearance="outline" hideRequiredMarker>
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="email" required>
+                <mat-error align="end" *ngIf="email && email.invalid && email.touched">
+                    This field is not valid
+                </mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="outline"  hideRequiredMarker>
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password" required>
+                <mat-error align="end" *ngIf="password && password.invalid && password.touched">
+                    This field is not valid
+                </mat-error>
+                <mat-hint align="end">Min 5 characters</mat-hint>
+            </mat-form-field>
+            <br><br>
+
+            <p style="padding-left:20px;font-weight: 500;margin-bottom:4px">
+                Didn't have an Account? </p>
+
+                <a routerLink="/signup" style="align-items: center;padding-left:60px">
+                Create Account
+                </a><br>
+<br>
+            <button mat-raised-button color="pick" [disabled]="form.invalid"(click)="ons()">Submit</button>
+
+        </form>
+
+    </div>
+    </div>

@@ -1,0 +1,25 @@
+<div class="body">
+    <div class="form">
+        <form [formGroup]="admin" #form="ngForm">
+            <p class="display-6 lo">Change Admin Password</p>
+           
+
+     
+
+
+            <mat-form-field appearance="outline"  hideRequiredMarker>
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password" required [(ngModel)]="pass">
+                <mat-error align="end" *ngIf="password && password.invalid && password.touched">
+                    This field is not valid
+                </mat-error>
+                <mat-hint align="end">Min 4 characters</mat-hint>
+            </mat-form-field>
+            <br><br>
+
+            <button mat-raised-button color="pick" [disabled]="form.invalid"(click)="ons()">Change</button>
+
+        </form>
+
+    </div>
+    </div>

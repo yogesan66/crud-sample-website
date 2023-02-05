@@ -1,0 +1,44 @@
+
+
+p{
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content{
+
+
+}
+
+.mat-pick{
+    color:#71B280 !important;
+    /* background-color: #151515 !important; */
+    /* background-color: #151515 !important; */
+    transition:  all .4s ease-in-out,color 0.4s !important;
+
+}
+
+.mat-pick:hover{
+    /* box-shadow: inset -100px 0px 0px 0px  #71B280!important; */
+    transition:  all .4s ease-in-out,color 0.4s !important;
+    background-color: black!important;
+    /* background: linear-gradient(to right, #71B280, #134E5E) !important; */
+}
+
+.btns{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+button{
+    margin:20px;
+}
+
+.body{
+    height:80vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}

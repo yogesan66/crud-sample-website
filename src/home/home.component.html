@@ -1,0 +1,15 @@
+
+<div class="body">
+<div class="container-fluid navbar" >
+    <a (click)="homec()"  >
+        <mat-icon class="font">home</mat-icon></a>
+    <a 
+    (click)="register()" >Registeration Form</a>
+    <a (click)="details()" >Form Details</a>
+    <a routerLink="/frontpage"  >
+        <mat-icon>logout</mat-icon>
+    </a>
+</div>
+
+<router-outlet></router-outlet>
+</div>

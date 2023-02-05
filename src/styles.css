@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0;
+     /* background-color:whitesmoke; */
+     /* background:linear-gradient(to right, #71B280, #134E5E); */
+     background:linear-gradient(to right, #71B280, #134E5E);
+
+     /* background-image: url("/src/assets/smooth-dark-blue-background.jpg center no-repeat cover" ); */
+
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+     height:100vh;
+     width:100vw}
+
+     .mat-pick:hover{
+        background-color: black  !important;
+        color:#71B280 !important;
+        transition: all 0.15s;
+     }
+    
+     .active{
+      color:"blue"
+  }

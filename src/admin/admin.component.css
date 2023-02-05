@@ -1,0 +1,39 @@
+.body{
+    width:100vw;
+    height:100vh;
+}
+.navbar{
+    width:15vw;
+    background-color: black;
+    display: flex;
+    height:100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    float: left;
+}
+
+.active{
+    color:"blue"
+}
+
+.navbar a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    transition: 0.15s;
+    padding:5px 15px;
+    
+}
+.font{
+    
+    
+}
+
+ .navbar a:hover,.navbar .active{
+    color:black;
+    border-radius: 4px;
+    background-color: white;
+    
+}

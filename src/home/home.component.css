@@ -1,0 +1,34 @@
+.body{
+    width:100vw;
+    height:100vh;
+}
+.navbar{
+    width:15vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: space-around;
+    align-items: center;
+    float:left;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    transition: 0.15s;
+    padding:5px 15px;
+    
+}
+.font{
+    
+    
+}
+
+ .navbar a:hover,.navbar .active{
+    color:black;
+    border-radius: 4px;
+    background-color: white;
+    
+}

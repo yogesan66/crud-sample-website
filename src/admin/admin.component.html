@@ -1,0 +1,26 @@
+
+<div class="body">
+    <div class="container-fluid navbar" >
+        <a (click)="homec()" routerLinkActive="active">
+            <mat-icon class="font">home</mat-icon></a>
+        <a (click)="sign()" routerLinkActive="active"
+         >Sign up user Details</a>
+
+         <a (click)="click()">
+            Go to website
+        </a>
+
+        <a (click)="pass()">
+            Change Admin Password
+        </a>
+
+
+
+        <a routerLink="/frontpage" >
+            <mat-icon>logout</mat-icon>
+        </a>
+    </div>
+    
+    <router-outlet></router-outlet>
+    </div>
+    
